@@ -115,6 +115,14 @@ lvim.plugins = {
           })
     end
   },
+
+  -- Automatic bullet pointing in markdown files
+  {
+    "bullets-vim/bullets.vim",
+    ft = { "markdown" },
+    config = function()
+    end,
+  },
 }
 
 -- General Settings
