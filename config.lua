@@ -53,12 +53,6 @@ lvim.plugins = {
     end,
   },
 
-  -- Real-time interpreter with Codi
-  {
-    "metakirby5/codi.vim",
-    cmd = "Codi",
-  },
-
   -- Highlight TODO comments
   {
     "folke/todo-comments.nvim",
@@ -127,7 +121,7 @@ lvim.plugins = {
 
 -- General Settings
 vim.opt.relativenumber = true
-vim.opt.statuscolumn = '%=%{v:relnum?v:relnum:v:lnum}' -- This fixes a bug causing line numbers to be uneven
+vim.opt.statuscolumn = '%=%{v:relnum?v:relnum:v:lnum}  ' -- This fixes a bug causing line numbers to be uneven
 
 -- Custom Keybindings
 lvim.keys.insert_mode["jj"] = "<Esc>"  -- Quick escape from insert mode
